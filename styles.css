@@ -85,3 +85,30 @@ footer{padding:30px 8%;display:flex;justify-content:space-between;gap:20px;flex-
     height: 23px;
   }
 }
+/* Corrección definitiva del icono flotante */
+a.whatsapp-float {
+  position: fixed !important;
+  right: 22px;
+  bottom: 22px;
+  width: fit-content;
+  height: auto;
+  max-width: calc(100vw - 30px);
+}
+
+a.whatsapp-float svg.whatsapp-icon {
+  display: block !important;
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px;
+  max-width: 24px !important;
+  min-height: 24px;
+  max-height: 24px !important;
+  flex: 0 0 24px;
+}
+
+@media (max-width: 480px) {
+  a.whatsapp-float {
+    right: 15px;
+    bottom: 15px;
+  }
+}
