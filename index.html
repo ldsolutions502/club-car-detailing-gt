@@ -3,15 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Club Car Detailing GT — cuidado automotriz, productos, herramientas y accesorios en Guatemala.">
+  <meta name="description" content="Club Car Detailing GT — productos para el cuidado automotriz y detailing en Guatemala.">
   <title>Club Car Detailing GT | El detalle hace la diferencia</title>
   <meta property="og:type" content="website">
 <meta property="og:title" content="Club Car Detailing GT">
-<meta property="og:description" content="El detalle hace la diferencia. Productos y accesorios para el cuidado automotriz.">
+<meta property="og:description" content="El detalle hace la diferencia. Productos para el cuidado automotriz.">
 <meta property="og:url" content="https://ldsolutions502.github.io/club-car-detailing-gt/">
 <meta property="og:image" content="https://ldsolutions502.github.io/club-car-detailing-gt/logo.png">
 <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
+
+<style>
+/* Catálogo de productos Club Car Detailing GT */
+.product-catalog { scroll-margin-top: 90px; }
+.catalog-note { color: #aaa; font-size: .92rem; margin: -1rem 0 2rem; max-width: 780px; }
+.catalog-category { padding: 2rem 0; scroll-margin-top: 90px; }
+.catalog-category + .catalog-category { border-top: 1px solid rgba(255,255,255,.12); }
+.catalog-category-heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 1.4rem; }
+.catalog-category-heading h3 { margin: .2rem 0 0; font-size: clamp(1.5rem, 3vw, 2.2rem); }
+.catalog-category-heading > p { max-width: 480px; color: #aaa; }
+.product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; }
+.product-card { min-width: 0; overflow: hidden; border: 1px solid rgba(255,255,255,.13); background: #111; border-radius: 4px; display: flex; flex-direction: column; }
+.product-image { position: relative; aspect-ratio: 4 / 3; display: grid; place-items: center; background: linear-gradient(135deg,#242424,#0a0a0a); color: #999; overflow: hidden; }
+.product-image img { width: 100%; height: 100%; object-fit: contain; position: absolute; inset: 0; padding: 1rem; }
+.image-placeholder { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; text-align: center; padding: .5rem; }
+.product-info { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 1.1rem; }
+.product-sku { font-size: .72rem; letter-spacing: .12em; color: #aaa; text-transform: uppercase; }
+.product-info h4 { font-size: 1.05rem; line-height: 1.35; margin: .55rem 0; }
+.product-info p { color: #aaa; font-size: .88rem; line-height: 1.55; margin: 0 0 1rem; }
+.product-button { display: inline-block; margin-top: auto; padding: .7rem .85rem; border: 1px solid #777; color: #f5f5f5; text-decoration: none; font-size: .8rem; transition: background .2s ease, color .2s ease; }
+.product-button:hover { background: #f2f2f2; color: #111; }
+@media (max-width: 900px) { .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .product-grid { grid-template-columns: 1fr; } .catalog-category-heading { display: block; } .catalog-category-heading > p { margin-top: .6rem; } }
+</style>
+
 </head>
 <body>
   <div class="topbar">GUATEMALA · AUTOMOTIVE CARE · DETAILING</div>
@@ -36,7 +61,7 @@
       <div class="hero-copy">
         <p class="eyebrow">CLUB CAR DETAILING GT</p>
         <h1>EL DETALLE<br><span>HACE LA DIFERENCIA.</span></h1>
-        <p class="lead">Productos, herramientas y accesorios para quienes disfrutan cuidar cada parte de su vehículo.</p>
+        <p class="lead">Productos de cuidado automotriz para quienes disfrutan cuidar cada detalle de su vehículo.</p>
         <div class="actions">
           <a class="button primary" href="#categorias">Explorar categorías</a>
           <a class="button secondary" href="#nosotros">Conócenos</a>
@@ -53,7 +78,7 @@
           <p class="eyebrow">MÁS QUE UN PRODUCTO</p>
           <h2>Una forma de<br><span>cuidar tu vehículo.</span></h2>
         </div>
-        <p>Club Car Detailing GT nace para reunir productos, herramientas y accesorios de cuidado automotriz en un solo lugar, con una experiencia pensada para entusiastas, detailers y quienes simplemente quieren mantener su vehículo en excelentes condiciones.</p>
+        <p>Club Car Detailing GT nace para reunir productos de cuidado automotriz en un solo lugar, con una experiencia pensada para entusiastas, detailers y quienes simplemente quieren mantener su vehículo en excelentes condiciones.</p>
       </div>
     </section>
 
@@ -63,12 +88,11 @@
         <p>La base para construir una rutina de cuidado automotriz a tu medida.</p>
       </div>
       <div class="categories">
-        <a class="category" href="#empezar"><span>01</span><h3>Lavado</h3><p>Champús, guantes y productos de limpieza exterior.</p></a>
-        <a class="category" href="#empezar"><span>02</span><h3>Protección</h3><p>Ceras, selladores y productos de acabado.</p></a>
-        <a class="category" href="#empezar"><span>03</span><h3>Interior</h3><p>Limpieza y protección para superficies interiores.</p></a>
-        <a class="category" href="#empezar"><span>04</span><h3>Llantas</h3><p>Limpieza, protección y acabado para neumáticos.</p></a>
-        <a class="category" href="#empezar"><span>05</span><h3>Herramientas</h3><p>Equipo y accesorios para trabajar con precisión.</p></a>
-        <a class="category" href="#empezar"><span>06</span><h3>Accesorios</h3><p>Complementos para una rutina de detailing completa.</p></a>
+        <a class="category" href="#catalogo-lavado"><span>01</span><h3>Lavado</h3><p>Limpieza exterior para mantener tu vehículo cuidado desde el primer paso.</p></a>
+        <a class="category" href="#catalogo-proteccion"><span>02</span><h3>Protección y brillo</h3><p>Ceras, pulimentos y productos para cuidar el acabado de la pintura y otras superficies compatibles.</p></a>
+        <a class="category" href="#catalogo-interior"><span>03</span><h3>Cuidado interior</h3><p>Productos para limpiar y mantener las superficies del habitáculo.</p></a>
+        <a class="category" href="#catalogo-llantas"><span>04</span><h3>Llantas y exteriores</h3><p>Soluciones para ruedas, neumáticos y molduras exteriores.</p></a>
+        <a class="category" href="#catalogo-aromatizantes"><span>05</span><h3>Aromatizantes</h3><p>Fragancias para refrescar el ambiente interior del vehículo.</p></a>
       </div>
     </section>
 
@@ -78,10 +102,11 @@
         <p>No necesitas saberlo todo para comenzar. Elige qué quieres hacer y nosotros te ayudamos a encontrar el camino.</p>
       </div>
       <div class="start-grid">
-        <a href="#contacto" class="start-card"><span>01</span><h3>Quiero lavar mi auto</h3><p>Productos para una limpieza exterior segura y efectiva.</p><strong>Explorar →</strong></a>
-        <a href="#contacto" class="start-card"><span>02</span><h3>Quiero proteger la pintura</h3><p>Opciones para conservar brillo, acabado y protección.</p><strong>Explorar →</strong></a>
-        <a href="#contacto" class="start-card"><span>03</span><h3>Quiero mejorar el interior</h3><p>Soluciones para limpiar y mantener el habitáculo.</p><strong>Explorar →</strong></a>
-        <a href="#contacto" class="start-card"><span>04</span><h3>Quiero empezar en detailing</h3><p>Herramientas y accesorios para dar tus primeros pasos.</p><strong>Explorar →</strong></a>
+        <a href="#catalogo-lavado" class="start-card"><span>01</span><h3>Quiero lavar mi auto</h3><p>Encuentra champús y productos para la limpieza exterior.</p><strong>Ver productos →</strong></a>
+        <a href="#catalogo-proteccion" class="start-card"><span>02</span><h3>Quiero proteger la pintura</h3><p>Explora ceras, pulimentos y productos de protección y brillo.</p><strong>Ver productos →</strong></a>
+        <a href="#catalogo-interior" class="start-card"><span>03</span><h3>Quiero cuidar el interior</h3><p>Opciones para limpiar y mantener las superficies interiores.</p><strong>Ver productos →</strong></a>
+        <a href="#catalogo-llantas" class="start-card"><span>04</span><h3>Quiero mejorar el acabado exterior</h3><p>Productos para ruedas, neumáticos y molduras exteriores.</p><strong>Ver productos →</strong></a>
+        <a href="#catalogo-aromatizantes" class="start-card"><span>05</span><h3>Quiero refrescar mi vehículo</h3><p>Conoce las opciones de aromatizantes para el interior.</p><strong>Ver productos →</strong></a>
       </div>
     </section>
 
@@ -91,7 +116,7 @@
         <h2>NO SE TRATA SOLO DE LIMPIAR.<br><span>SE TRATA DE CUIDAR CADA DETALLE.</span></h2>
         <div class="philosophy-text">
           <p>Club Car Detailing GT nace de una idea sencilla: disfrutar un vehículo también significa disfrutar el proceso de cuidarlo.</p>
-          <p>Creamos un espacio especializado en <strong>productos, herramientas y accesorios para el cuidado automotriz</strong>, pensado tanto para quienes están comenzando en el mundo del detailing como para quienes ya conocen la importancia de hacer cada trabajo correctamente.</p>
+          <p>Creamos un espacio especializado en <strong>productos para el cuidado automotriz</strong>, pensado tanto para quienes están comenzando en el mundo del detailing como para quienes ya conocen la importancia de hacer cada trabajo correctamente.</p>
           <p>Buscamos reunir productos que permitan <strong>lavar, limpiar, proteger y mantener</strong> cada parte del vehículo, con una propuesta enfocada en calidad, funcionalidad y una buena experiencia de compra.</p>
         </div>
       </div>
@@ -110,18 +135,462 @@
     <section class="section guide" id="guia">
       <div class="guide-box">
         <div><p class="eyebrow">PRÓXIMAMENTE</p><h2>Guía &<br><span>Consejos.</span></h2></div>
-        <p>Contenido práctico para aprender sobre lavado, protección, interior, herramientas y técnicas de detailing.</p>
+        <p>Contenido práctico para aprender sobre lavado, protección de pintura, cuidado interior y técnicas de detailing.</p>
         <span class="coming">MUY PRONTO · CLUB CAR DETAILING GT</span>
       </div>
     </section>
 
-    <section class="section catalog-placeholder">
-      <div class="catalog-box">
-        <p class="eyebrow">CATÁLOGO</p>
-        <h2>Nuestros productos<br><span>próximamente.</span></h2>
-        <p>Estamos preparando una selección de productos, herramientas y accesorios para el cuidado automotriz.</p>
-        <a class="button secondary" href="#contacto">Consultar novedades</a>
+    <section class="section product-catalog" id="catalogo">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECCIÓN DE PRODUCTOS</p><h2>Nuestro catálogo</h2></div>
+        <p>Explora productos por categoría y escríbenos para consultar detalles, disponibilidad y opciones.</p>
       </div>
+      <p class="catalog-note">Las fotografías se irán incorporando. Consulta por WhatsApp para confirmar disponibilidad antes de realizar tu pedido.</p>
+      <section class="catalog-category" id="catalogo-lavado">
+        <div class="catalog-category-heading"><div><p class="eyebrow">CATEGORÍA</p><h3>Lavado</h3></div><p>Limpieza exterior para mantener tu vehículo cuidado desde el primer paso.</p></div>
+        <div class="product-grid">
+<article class="product-card" data-category="Lavado">
+      <div class="product-image">
+        <img src="productos/G17748.jpg" alt="Ultimate Wash &amp; Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G17748</span>
+        <h4>Ultimate Wash &amp; Wax</h4>
+        <p>Champú para lavar el vehículo y aportar brillo durante la rutina de lavado.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G17748%20-%20Ultimate%20Wash%20%26%20Wax%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Lavado">
+      <div class="product-image">
+        <img src="productos/G250224.jpg" alt="Multi-Surface Cleaner" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G250224</span>
+        <h4>Multi-Surface Cleaner</h4>
+        <p>Limpiador para superficies seleccionadas del vehículo.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G250224%20-%20Multi-Surface%20Cleaner%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Lavado">
+      <div class="product-image">
+        <img src="productos/G240416.jpg" alt="Glass Cleaner" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G240416</span>
+        <h4>Glass Cleaner</h4>
+        <p>Limpiador para cristales del vehículo.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G240416%20-%20Glass%20Cleaner%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Lavado">
+      <div class="product-image">
+        <img src="productos/G251024.jpg" alt="Hybrid Ceramic Waterless Wash" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G251024</span>
+        <h4>Hybrid Ceramic Waterless Wash</h4>
+        <p>Producto para limpieza exterior sin enjuague, según las indicaciones de uso.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G251024%20-%20Hybrid%20Ceramic%20Waterless%20Wash%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Lavado">
+      <div class="product-image">
+        <img src="productos/G250464.jpg" alt="Watermelon Shampoo" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G250464</span>
+        <h4>Watermelon Shampoo</h4>
+        <p>Champú para la limpieza exterior del vehículo.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G250464%20-%20Watermelon%20Shampoo%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+        </div>
+      </section>
+      <section class="catalog-category" id="catalogo-proteccion">
+        <div class="catalog-category-heading"><div><p class="eyebrow">CATEGORÍA</p><h3>Protección y brillo</h3></div><p>Ceras, pulimentos y productos para cuidar el acabado de la pintura y otras superficies compatibles.</p></div>
+        <div class="product-grid">
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/A1214.jpg" alt="Cleaner Wax Paste" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · A1214</span>
+        <h4>Cleaner Wax Paste</h4>
+        <p>Cera limpiadora en pasta para apoyar la limpieza y el acabado de la pintura.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20A1214%20-%20Cleaner%20Wax%20Paste%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/A1216.jpg" alt="Car Cleaner Wax Liquid" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · A1216</span>
+        <h4>Car Cleaner Wax Liquid</h4>
+        <p>Cera limpiadora líquida para el cuidado y acabado de la pintura.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20A1216%20-%20Car%20Cleaner%20Wax%20Liquid%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G10307.jpg" alt="ScratchX 2.0" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G10307</span>
+        <h4>ScratchX 2.0</h4>
+        <p>Producto para trabajar marcas superficiales y mejorar la apariencia de la pintura.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G10307%20-%20ScratchX%202.0%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G17216.jpg" alt="Ultimate Compound" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G17216</span>
+        <h4>Ultimate Compound</h4>
+        <p>Compuesto para la corrección y recuperación del acabado de la pintura.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G17216%20-%20Ultimate%20Compound%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G19216.jpg" alt="Ultimate Polish" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G19216</span>
+        <h4>Ultimate Polish</h4>
+        <p>Pulimento para mejorar el brillo y la apariencia de la pintura.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G19216%20-%20Ultimate%20Polish%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G190526.jpg" alt="Hybrid Ceramic Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G190526</span>
+        <h4>Hybrid Ceramic Wax</h4>
+        <p>Cera híbrida cerámica para ayudar a proteger la pintura.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G190526%20-%20Hybrid%20Ceramic%20Wax%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G191016.jpg" alt="3-in-1 Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G191016</span>
+        <h4>3-in-1 Wax</h4>
+        <p>Cera de protección para el cuidado y acabado de la pintura.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G191016%20-%203-in-1%20Wax%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G200526.jpg" alt="Hybrid Ceramic Detailer" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G200526</span>
+        <h4>Hybrid Ceramic Detailer</h4>
+        <p>Detailer híbrido cerámico para mantenimiento y acabado exterior.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G200526%20-%20Hybrid%20Ceramic%20Detailer%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G201024.jpg" alt="Ultimate Quik Detailer" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G201024</span>
+        <h4>Ultimate Quik Detailer</h4>
+        <p>Detailer rápido para mantener la apariencia de la pintura entre lavados.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G201024%20-%20Ultimate%20Quik%20Detailer%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G210608.jpg" alt="Ultimate Paste Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G210608</span>
+        <h4>Ultimate Paste Wax</h4>
+        <p>Cera en pasta para protección y brillo de la pintura.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G210608%20-%20Ultimate%20Paste%20Wax%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G7014J.jpg" alt="Gold Class Paste Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G7014J</span>
+        <h4>Gold Class Paste Wax</h4>
+        <p>Cera en pasta para el cuidado y acabado de la pintura.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G7014J%20-%20Gold%20Class%20Paste%20Wax%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G7016.jpg" alt="Gold Class Liquid Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G7016</span>
+        <h4>Gold Class Liquid Wax</h4>
+        <p>Cera líquida para el cuidado y acabado de la pintura.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G7016%20-%20Gold%20Class%20Liquid%20Wax%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G12310.jpg" alt="PlastX Clear Plastic Cleaner" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G12310</span>
+        <h4>PlastX Clear Plastic Cleaner</h4>
+        <p>Limpiador para plásticos transparentes.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G12310%20-%20PlastX%20Clear%20Plastic%20Cleaner%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Protección y brillo">
+      <div class="product-image">
+        <img src="productos/G211606.jpg" alt="Metal Polish" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G211606</span>
+        <h4>Metal Polish</h4>
+        <p>Pulimento para superficies metálicas compatibles.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G211606%20-%20Metal%20Polish%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+        </div>
+      </section>
+      <section class="catalog-category" id="catalogo-interior">
+        <div class="catalog-category-heading"><div><p class="eyebrow">CATEGORÍA</p><h3>Cuidado interior</h3></div><p>Productos para limpiar y mantener las superficies del habitáculo.</p></div>
+        <div class="product-grid">
+<article class="product-card" data-category="Cuidado interior">
+      <div class="product-image">
+        <img src="productos/G10916.jpg" alt="Gold Class Rich Leather Spray" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G10916</span>
+        <h4>Gold Class Rich Leather Spray</h4>
+        <p>Producto en spray para el cuidado de superficies de cuero.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G10916%20-%20Gold%20Class%20Rich%20Leather%20Spray%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Cuidado interior">
+      <div class="product-image">
+        <img src="productos/G13616.jpg" alt="Quik Interior Detailer" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G13616</span>
+        <h4>Quik Interior Detailer</h4>
+        <p>Producto para limpieza y mantenimiento de superficies interiores.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G13616%20-%20Quik%20Interior%20Detailer%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Cuidado interior">
+      <div class="product-image">
+        <img src="productos/G14516.jpg" alt="Ultimate Protectant" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G14516</span>
+        <h4>Ultimate Protectant</h4>
+        <p>Protector para superficies interiores compatibles.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G14516%20-%20Ultimate%20Protectant%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Cuidado interior">
+      <div class="product-image">
+        <img src="productos/G201316.jpg" alt="Ultimate Leather Detailer" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G201316</span>
+        <h4>Ultimate Leather Detailer</h4>
+        <p>Producto para limpiar y mantener superficies de cuero.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G201316%20-%20Ultimate%20Leather%20Detailer%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+        </div>
+      </section>
+      <section class="catalog-category" id="catalogo-llantas">
+        <div class="catalog-category-heading"><div><p class="eyebrow">CATEGORÍA</p><h3>Llantas y exteriores</h3></div><p>Soluciones para ruedas, neumáticos y molduras exteriores.</p></div>
+        <div class="product-grid">
+<article class="product-card" data-category="Llantas y exteriores">
+      <div class="product-image">
+        <img src="productos/G180124.jpg" alt="Advanced Wheel Cleaner" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G180124</span>
+        <h4>Advanced Wheel Cleaner</h4>
+        <p>Limpiador para ruedas.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G180124%20-%20Advanced%20Wheel%20Cleaner%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Llantas y exteriores">
+      <div class="product-image">
+        <img src="productos/G230416.jpg" alt="Ceramic Tire Dressing" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G230416</span>
+        <h4>Ceramic Tire Dressing</h4>
+        <p>Producto para acabado y cuidado de neumáticos.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G230416%20-%20Ceramic%20Tire%20Dressing%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Llantas y exteriores">
+      <div class="product-image">
+        <img src="productos/G250100.jpg" alt="Exterior Trim Restorer Kit" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G250100</span>
+        <h4>Exterior Trim Restorer Kit</h4>
+        <p>Kit para restaurar la apariencia de molduras exteriores.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G250100%20-%20Exterior%20Trim%20Restorer%20Kit%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Llantas y exteriores">
+      <div class="product-image">
+        <img src="productos/G250320.jpg" alt="Foaming Wheel &amp; Tire Cleaner" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G250320</span>
+        <h4>Foaming Wheel &amp; Tire Cleaner</h4>
+        <p>Limpiador espumoso para ruedas y neumáticos.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G250320%20-%20Foaming%20Wheel%20%26%20Tire%20Cleaner%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Llantas y exteriores">
+      <div class="product-image">
+        <img src="productos/G250816.jpg" alt="Ultimate Insane Shine" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G250816</span>
+        <h4>Ultimate Insane Shine</h4>
+        <p>Producto para dar acabado brillante a los neumáticos.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G250816%20-%20Ultimate%20Insane%20Shine%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Llantas y exteriores">
+      <div class="product-image">
+        <img src="productos/G7516.jpg" alt="Endurance Tire Gel" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G7516</span>
+        <h4>Endurance Tire Gel</h4>
+        <p>Gel para el cuidado y acabado de los neumáticos.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G7516%20-%20Endurance%20Tire%20Gel%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+        </div>
+      </section>
+      <section class="catalog-category" id="catalogo-aromatizantes">
+        <div class="catalog-category-heading"><div><p class="eyebrow">CATEGORÍA</p><h3>Aromatizantes</h3></div><p>Fragancias para refrescar el ambiente interior del vehículo.</p></div>
+        <div class="product-grid">
+<article class="product-card" data-category="Aromatizantes">
+      <div class="product-image">
+        <img src="productos/G16402.jpg" alt="New Car Scent Air Freshener" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G16402</span>
+        <h4>New Car Scent Air Freshener</h4>
+        <p>Aromatizante para el interior del vehículo con fragancia New Car Scent.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G16402%20-%20New%20Car%20Scent%20Air%20Freshener%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Aromatizantes">
+      <div class="product-image">
+        <img src="productos/G16602.jpg" alt="Summer Breeze Whole-Car Refresher" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G16602</span>
+        <h4>Summer Breeze Whole-Car Refresher</h4>
+        <p>Producto para refrescar el ambiente interior con fragancia Summer Breeze.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G16602%20-%20Summer%20Breeze%20Whole-Car%20Refresher%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Aromatizantes">
+      <div class="product-image">
+        <img src="productos/G181302.jpg" alt="Black Chrome Whole-Car Refresher" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G181302</span>
+        <h4>Black Chrome Whole-Car Refresher</h4>
+        <p>Producto para refrescar el ambiente interior con fragancia Black Chrome.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G181302%20-%20Black%20Chrome%20Whole-Car%20Refresher%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Aromatizantes">
+      <div class="product-image">
+        <img src="productos/G201502.jpg" alt="Fiji Sunset Whole-Car Refresher" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G201502</span>
+        <h4>Fiji Sunset Whole-Car Refresher</h4>
+        <p>Producto para refrescar el ambiente interior con fragancia Fiji Sunset.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G201502%20-%20Fiji%20Sunset%20Whole-Car%20Refresher%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Aromatizantes">
+      <div class="product-image">
+        <img src="productos/G250608.jpg" alt="New Car Scent Spray" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G250608</span>
+        <h4>New Car Scent Spray</h4>
+        <p>Aromatizante en spray con fragancia New Car Scent.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G250608%20-%20New%20Car%20Scent%20Spray%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+<article class="product-card" data-category="Aromatizantes">
+      <div class="product-image">
+        <img src="productos/G250708.jpg" alt="Black Chrome Spray" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <span class="image-placeholder">Fotografía próximamente</span>
+      </div>
+      <div class="product-info">
+        <span class="product-sku">SKU · G250708</span>
+        <h4>Black Chrome Spray</h4>
+        <p>Aromatizante en spray con fragancia Black Chrome.</p>
+        <a class="product-button" href="https://wa.me/50247365401?text=Hola%2C%20quisiera%20consultar%20por%20el%20producto%20G250708%20-%20Black%20Chrome%20Spray%20de%20Club%20Car%20Detailing%20GT.%20%C2%BFMe%20comparten%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+    </article>
+        </div>
+      </section>
     </section>
 
     <section class="contact" id="contacto">
