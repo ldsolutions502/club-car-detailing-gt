@@ -37,9 +37,9 @@
 @media (max-width: 900px) { .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .product-grid { grid-template-columns: 1fr; } .catalog-category-heading { display: block; } .catalog-category-heading > p { margin-top: .6rem; } }
 
-.meguiars-lockup { display: inline-flex; flex-direction: column; gap: .12rem; margin: .2rem 0 1rem; padding: .55rem .85rem; border-left: 2px solid #b7b7b7; background: rgba(255,255,255,.045); }
+.meguiars-lockup { display: inline-flex; flex-direction: column; align-items: flex-start; gap: .35rem; margin: .2rem 0 1rem; padding: .55rem .85rem; border-left: 2px solid #b7b7b7; background: rgba(255,255,255,.045); }
 .meguiars-lockup span { color: #aaa; font-size: .58rem; letter-spacing: .2em; }
-.meguiars-lockup strong { color: #f5f5f5; font-family: Georgia,serif; font-size: 1.35rem; letter-spacing: .04em; line-height: 1; }
+.meguiars-lockup img { display: block; width: min(190px, 48vw); height: 76px; object-fit: contain; object-position: left center; }
 
 </style>
 
@@ -67,7 +67,7 @@
     <section class="hero" id="inicio">
       <div class="hero-copy">
         <p class="eyebrow">CLUB CAR DETAILING GT</p>
-        <div class="meguiars-lockup" aria-label="Productos Meguiar’s"><span>PRODUCTOS DE</span><strong>MEGUIAR’S</strong></div>
+        <div class="meguiars-lockup" aria-label="Productos Meguiar’s"><span>PRODUCTOS DE</span><img src="meguiars-logo.png" alt="Meguiar’s"></div>
         <h1>EL DETALLE<br><span>HACE LA DIFERENCIA.</span></h1>
         <p class="lead">Descubre nuestra selección de productos Meguiar’s para lavar, proteger y mantener cada detalle de tu vehículo. Atención y asesoría a través de Club Car Detailing GT.</p>
         <div class="actions">
@@ -161,7 +161,7 @@
         <div class="product-grid">
 <article class="product-card" data-category="Lavado" data-sku="G17748">
       <div class="product-image">
-        <img src="productos/G17748.jpg" alt="Ultimate Wash &amp; Wax 1x48oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G17748.png" alt="Ultimate Wash &amp; Wax 1x48oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G17748</span>
       </div>
       <div class="product-info">
@@ -172,7 +172,7 @@
       </div>
     </article><article class="product-card" data-category="Lavado" data-sku="G250464">
       <div class="product-image">
-        <img src="productos/G250464.jpg" alt="Watermelon Bubblegum Wash-64oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G250464.png" alt="Watermelon Bubblegum Wash-64oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G250464</span>
       </div>
       <div class="product-info">
@@ -183,7 +183,7 @@
       </div>
     </article><article class="product-card" data-category="Lavado" data-sku="G251024">
       <div class="product-image">
-        <img src="productos/G251024.jpg" alt="Hybrid Ceramic Waterless Wash &amp; Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G251024.png" alt="Hybrid Ceramic Waterless Wash &amp; Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G251024</span>
       </div>
       <div class="product-info">
@@ -199,7 +199,7 @@
         <div class="product-grid">
 <article class="product-card" data-category="Corrección y limpieza" data-sku="G10307">
       <div class="product-image">
-        <img src="productos/G10307.jpg" alt="Scratch X 2.0" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G10307.png" alt="Scratch X 2.0" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G10307</span>
       </div>
       <div class="product-info">
@@ -210,7 +210,7 @@
       </div>
     </article><article class="product-card" data-category="Corrección y limpieza" data-sku="G12310">
       <div class="product-image">
-        <img src="productos/G12310.jpg" alt="Plast-X Clear Plastic Cleaner 1×296 ml" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G12310.png" alt="Plast-X Clear Plastic Cleaner 1×296 ml" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G12310</span>
       </div>
       <div class="product-info">
@@ -221,7 +221,7 @@
       </div>
     </article><article class="product-card" data-category="Corrección y limpieza" data-sku="G17216">
       <div class="product-image">
-        <img src="productos/G17216.jpg" alt="Ultimate Compound 1x450ml" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G17216.png" alt="Ultimate Compound 1x450ml" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G17216</span>
       </div>
       <div class="product-info">
@@ -232,7 +232,7 @@
       </div>
     </article><article class="product-card" data-category="Corrección y limpieza" data-sku="G19216">
       <div class="product-image">
-        <img src="productos/G19216.jpg" alt="Ultimate Polish" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G19216.png" alt="Ultimate Polish" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G19216</span>
       </div>
       <div class="product-info">
@@ -243,7 +243,7 @@
       </div>
     </article><article class="product-card" data-category="Corrección y limpieza" data-sku="G211606">
       <div class="product-image">
-        <img src="productos/G211606.jpg" alt="Metal Polish – 6oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G211606.png" alt="Metal Polish – 6oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G211606</span>
       </div>
       <div class="product-info">
@@ -254,7 +254,7 @@
       </div>
     </article><article class="product-card" data-category="Corrección y limpieza" data-sku="G240416">
       <div class="product-image">
-        <img src="productos/G240416.jpg" alt="Ultimate Glass Cleanner &amp; Water Repellent 473ml" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G240416.png" alt="Ultimate Glass Cleanner &amp; Water Repellent 473ml" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G240416</span>
       </div>
       <div class="product-info">
@@ -265,7 +265,7 @@
       </div>
     </article><article class="product-card" data-category="Corrección y limpieza" data-sku="G250224">
       <div class="product-image">
-        <img src="productos/G250224.jpg" alt="Paint Dash &amp; Glass-24oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G250224.png" alt="Paint Dash &amp; Glass-24oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G250224</span>
       </div>
       <div class="product-info">
@@ -276,7 +276,7 @@
       </div>
     </article><article class="product-card" data-category="Corrección y limpieza" data-sku="A3714">
       <div class="product-image">
-        <img src="productos/A3714.jpg" alt="Water Spot Remover" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/A3714.png" alt="Water Spot Remover" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · A3714</span>
       </div>
       <div class="product-info">
@@ -292,7 +292,7 @@
         <div class="product-grid">
 <article class="product-card" data-category="Protección y brillo" data-sku="A1214">
       <div class="product-image">
-        <img src="productos/A1214.jpg" alt="Cleaner Wax Paste" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/A1214.png" alt="Cleaner Wax Paste" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · A1214</span>
       </div>
       <div class="product-info">
@@ -303,7 +303,7 @@
       </div>
     </article><article class="product-card" data-category="Protección y brillo" data-sku="A1216">
       <div class="product-image">
-        <img src="productos/A1216.jpg" alt="Car Cleaner Wax Liquid" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/A1216.png" alt="Car Cleaner Wax Liquid" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · A1216</span>
       </div>
       <div class="product-info">
@@ -314,7 +314,7 @@
       </div>
     </article><article class="product-card" data-category="Protección y brillo" data-sku="G190526">
       <div class="product-image">
-        <img src="productos/G190526.jpg" alt="Hybrid Ceramic Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G190526.png" alt="Hybrid Ceramic Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G190526</span>
       </div>
       <div class="product-info">
@@ -325,7 +325,7 @@
       </div>
     </article><article class="product-card" data-category="Protección y brillo" data-sku="G191016">
       <div class="product-image">
-        <img src="productos/G191016.jpg" alt="3-in-1 Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G191016.png" alt="3-in-1 Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G191016</span>
       </div>
       <div class="product-info">
@@ -336,7 +336,7 @@
       </div>
     </article><article class="product-card" data-category="Protección y brillo" data-sku="G200526">
       <div class="product-image">
-        <img src="productos/G200526.jpg" alt="Hybrid Ceramic Detailer 26oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G200526.png" alt="Hybrid Ceramic Detailer 26oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G200526</span>
       </div>
       <div class="product-info">
@@ -347,7 +347,7 @@
       </div>
     </article><article class="product-card" data-category="Protección y brillo" data-sku="G201024">
       <div class="product-image">
-        <img src="productos/G201024.jpg" alt="Ultimate Quik Detailer" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G201024.png" alt="Ultimate Quik Detailer" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G201024</span>
       </div>
       <div class="product-info">
@@ -358,7 +358,7 @@
       </div>
     </article><article class="product-card" data-category="Protección y brillo" data-sku="G200416">
       <div class="product-image">
-        <img src="productos/G200416.jpg" alt="Hybrid Ceramic Liquid Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G200416.png" alt="Hybrid Ceramic Liquid Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G200416</span>
       </div>
       <div class="product-info">
@@ -369,7 +369,7 @@
       </div>
     </article><article class="product-card" data-category="Protección y brillo" data-sku="G210608">
       <div class="product-image">
-        <img src="productos/G210608.jpg" alt="Ultimate Paste Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G210608.png" alt="Ultimate Paste Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G210608</span>
       </div>
       <div class="product-info">
@@ -380,7 +380,7 @@
       </div>
     </article><article class="product-card" data-category="Protección y brillo" data-sku="G7014J">
       <div class="product-image">
-        <img src="productos/G7014J.jpg" alt="Gold Class Clear Coat Paste Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G7014J.png" alt="Gold Class Clear Coat Paste Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G7014J</span>
       </div>
       <div class="product-info">
@@ -391,7 +391,7 @@
       </div>
     </article><article class="product-card" data-category="Protección y brillo" data-sku="G7016">
       <div class="product-image">
-        <img src="productos/G7016.jpg" alt="Gold Class Clear Coat Liquid Car Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G7016.png" alt="Gold Class Clear Coat Liquid Car Wax" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G7016</span>
       </div>
       <div class="product-info">
@@ -407,7 +407,7 @@
         <div class="product-grid">
 <article class="product-card" data-category="Cuidado interior" data-sku="G10916">
       <div class="product-image">
-        <img src="productos/G10916.jpg" alt="Gold C. Rich Leather Spray" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G10916.png" alt="Gold C. Rich Leather Spray" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G10916</span>
       </div>
       <div class="product-info">
@@ -418,7 +418,7 @@
       </div>
     </article><article class="product-card" data-category="Cuidado interior" data-sku="G13616">
       <div class="product-image">
-        <img src="productos/G13616.jpg" alt="Quik Interior Detailer r 1x473ml" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G13616.png" alt="Quik Interior Detailer r 1x473ml" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G13616</span>
       </div>
       <div class="product-info">
@@ -429,7 +429,7 @@
       </div>
     </article><article class="product-card" data-category="Cuidado interior" data-sku="G14516">
       <div class="product-image">
-        <img src="productos/G14516.jpg" alt="Ultimate Protectan (1×355 ml )" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G14516.png" alt="Ultimate Protectan (1×355 ml )" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G14516</span>
       </div>
       <div class="product-info">
@@ -440,7 +440,7 @@
       </div>
     </article><article class="product-card" data-category="Cuidado interior" data-sku="G201316">
       <div class="product-image">
-        <img src="productos/G201316.jpg" alt="Ultimate Leather Detailer" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G201316.png" alt="Ultimate Leather Detailer" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G201316</span>
       </div>
       <div class="product-info">
@@ -451,7 +451,7 @@
       </div>
     </article><article class="product-card" data-category="Cuidado interior" data-sku="G4016">
       <div class="product-image">
-        <img src="productos/G4016.jpg" alt="Supreme Shine Protectant" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G4016.png" alt="Supreme Shine Protectant" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G4016</span>
       </div>
       <div class="product-info">
@@ -467,7 +467,7 @@
         <div class="product-grid">
 <article class="product-card" data-category="Llantas y exteriores" data-sku="G180124">
       <div class="product-image">
-        <img src="productos/G180124.jpg" alt="Ultimate all wheel cleaner" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G180124.png" alt="Ultimate all wheel cleaner" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G180124</span>
       </div>
       <div class="product-info">
@@ -478,7 +478,7 @@
       </div>
     </article><article class="product-card" data-category="Llantas y exteriores" data-sku="G230416">
       <div class="product-image">
-        <img src="productos/G230416.jpg" alt="Hybrid Ceramic Tire" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G230416.png" alt="Hybrid Ceramic Tire" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G230416</span>
       </div>
       <div class="product-info">
@@ -489,7 +489,7 @@
       </div>
     </article><article class="product-card" data-category="Llantas y exteriores" data-sku="G250100">
       <div class="product-image">
-        <img src="productos/G250100.jpg" alt="Heavy Duty Trim Kit Meguiar&#x27;s Trim Kit Sealant" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G250100.png" alt="Heavy Duty Trim Kit Meguiar&#x27;s Trim Kit Sealant" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G250100</span>
       </div>
       <div class="product-info">
@@ -500,7 +500,7 @@
       </div>
     </article><article class="product-card" data-category="Llantas y exteriores" data-sku="G250320">
       <div class="product-image">
-        <img src="productos/G250320.jpg" alt="Hot Rims Wheel and Tire Cleaner Aerosol" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G250320.png" alt="Hot Rims Wheel and Tire Cleaner Aerosol" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G250320</span>
       </div>
       <div class="product-info">
@@ -511,7 +511,7 @@
       </div>
     </article><article class="product-card" data-category="Llantas y exteriores" data-sku="G250816">
       <div class="product-image">
-        <img src="productos/G250816.jpg" alt="Ultimate Insane Shine Tire Spray" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G250816.png" alt="Ultimate Insane Shine Tire Spray" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G250816</span>
       </div>
       <div class="product-info">
@@ -522,7 +522,7 @@
       </div>
     </article><article class="product-card" data-category="Llantas y exteriores" data-sku="G7516">
       <div class="product-image">
-        <img src="productos/G7516.jpg" alt="Gold C. Endurance High Gloss" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G7516.png" alt="Gold C. Endurance High Gloss" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G7516</span>
       </div>
       <div class="product-info">
@@ -538,7 +538,7 @@
         <div class="product-grid">
 <article class="product-card" data-category="Aromatizantes" data-sku="G16402">
       <div class="product-image">
-        <img src="productos/G16402.jpg" alt="Air Refresher-New Car-2oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G16402.png" alt="Air Refresher-New Car-2oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G16402</span>
       </div>
       <div class="product-info">
@@ -549,7 +549,7 @@
       </div>
     </article><article class="product-card" data-category="Aromatizantes" data-sku="G16602">
       <div class="product-image">
-        <img src="productos/G16602.jpg" alt="Whole Car Air Re-Fresher – Summer Breeze Scent" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G16602.png" alt="Whole Car Air Re-Fresher – Summer Breeze Scent" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G16602</span>
       </div>
       <div class="product-info">
@@ -560,7 +560,7 @@
       </div>
     </article><article class="product-card" data-category="Aromatizantes" data-sku="G201502">
       <div class="product-image">
-        <img src="productos/G201502.jpg" alt="Whole Car Air Re-Fresher – Fiji Sunset Scent" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G201502.png" alt="Whole Car Air Re-Fresher – Fiji Sunset Scent" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G201502</span>
       </div>
       <div class="product-info">
@@ -571,7 +571,7 @@
       </div>
     </article><article class="product-card" data-category="Aromatizantes" data-sku="G250608">
       <div class="product-image">
-        <img src="productos/G250608.jpg" alt="Trigger Air Refresher New Car" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G250608.png" alt="Trigger Air Refresher New Car" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G250608</span>
       </div>
       <div class="product-info">
@@ -582,7 +582,7 @@
       </div>
     </article><article class="product-card" data-category="Aromatizantes" data-sku="G250708">
       <div class="product-image">
-        <img src="productos/G250708.jpg" alt="Trigger Air Refresher Spray Black Chrome" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G250708.png" alt="Trigger Air Refresher Spray Black Chrome" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G250708</span>
       </div>
       <div class="product-info">
@@ -593,7 +593,7 @@
       </div>
     </article><article class="product-card" data-category="Aromatizantes" data-sku="G181302">
       <div class="product-image">
-        <img src="productos/G181302.jpg" alt="Whole Car Air Refresher-Black Chrome-2oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+        <img src="productos/G181302.png" alt="Whole Car Air Refresher-Black Chrome-2oz" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
         <span class="image-placeholder">Fotografía próximamente · G181302</span>
       </div>
       <div class="product-info">
@@ -614,7 +614,7 @@
         <p>Escríbenos para consultar sobre productos, recomendaciones o novedades de Club Car Detailing GT.</p>
 <a
   class="button primary"
-  href="https://wa.me/50247365401?text=Hola%2C%20quiero%20recibir%20asesor%C3%ADa%20sobre%20productos%20para%20el%20cuidado%20de%20mi%20veh%C3%ADculo.%20%C2%BFMe%20pueden%20ayudar%20a%20elegir%3F"
+  href="https://wa.me/50247365401?text=Hola%2C%20quiero%20conocer%20el%20cat%C3%A1logo%20de%20productos%20Meguiar%E2%80%99s%20y%20consultar%20opciones%20para%20realizar%20una%20compra.%20%C2%BFMe%20lo%20pueden%20compartir%3F"
   target="_blank"
   rel="noopener noreferrer"
 >
@@ -658,11 +658,11 @@
   <script src="script.js"></script>
 <!-- Botón flotante de WhatsApp -->
 <a
-  href="https://wa.me/50247365401?text=Hola%2C%20quiero%20recibir%20asesor%C3%ADa%20sobre%20productos%20para%20el%20cuidado%20de%20mi%20veh%C3%ADculo.%20%C2%BFMe%20pueden%20ayudar%20a%20elegir%3F"
+  href="https://wa.me/50247365401?text=Hola%2C%20quiero%20conocer%20el%20cat%C3%A1logo%20de%20productos%20Meguiar%E2%80%99s%20y%20consultar%20opciones%20para%20realizar%20una%20compra.%20%C2%BFMe%20lo%20pueden%20compartir%3F"
   class="whatsapp-float"
   target="_blank"
   rel="noopener noreferrer"
-  aria-label="Contactar a Club Car Detailing GT por WhatsApp"
+  aria-label="Escríbenos por WhatsApp para solicitar el catálogo o consultar una compra"
 >
   <svg
     viewBox="0 0 24 24"
@@ -674,7 +674,7 @@
       d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.5 0 .14 5.35.14 11.93c0 2.1.55 4.15 1.6 5.96L.04 24l6.26-1.64a11.94 11.94 0 0 0 5.77 1.47h.01c6.58 0 11.94-5.36 11.94-11.94 0-3.19-1.24-6.19-3.5-8.41ZM12.08 21.8h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.72.98.99-3.63-.24-.37a9.87 9.87 0 0 1-1.52-5.26c0-5.47 4.45-9.92 9.92-9.92a9.85 9.85 0 0 1 7.02 2.91 9.85 9.85 0 0 1 2.9 7.02c0 5.47-4.45 9.92-9.92 9.92Zm5.44-7.43c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.22 1.36.19 1.87.11.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"
     />
   </svg>
-  <span>Consulta por WhatsApp</span>
+  <span>Escríbenos</span>
 </a>
 </body>
 </html>
